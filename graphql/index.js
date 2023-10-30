@@ -52,7 +52,7 @@ PlaceTC.addResolver({
      });
      return query.exec();                // this is how this custom resolver is made to enter the return value into 
   }                                      // the same data stream as generic resolvers and thus the client gets the 
-                                         // result of the search. Just "return results;" does not work.
+                                         // result of the search. Just "return query;" does not work.
 });
 
 // So GraphQL resolvers are created like this:
